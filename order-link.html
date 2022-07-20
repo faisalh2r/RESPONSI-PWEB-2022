@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Link</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+</head>
+<body>
+    <script language="javascript" src="validasi.js"></script>
+    <script language="javascript" src="order.js"></script>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="gambar/logo laundry.png" alt="" height="60" width="60">
+              Laundry Putih Bersih
+            </div>
+        </header>
+        <nav>
+             <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="pesan.html">Pesan</a></li>
+                <li><a href="list-harga.html">List Harga</a></li>
+                <li><a href="tentang-toko.html">Tentang Kami</a></li>
+             </ul>
+         </nav>
+       <article>
+                <div class="isi">
+                    <div class="judul">
+                        <center>Order Laundry</center>
+                        <hr>
+                    </div>
+                    <p><div align="center"><strong><font size="6" face="Courier New, Courier,mono">Form Order Laundry Putih Bersih </font></strong></div>
+                        <form name="form1" method="post" onSubmit="validasi()" action="proses-order.php">
+                            <table width="58%" border="0" align="center">
+                                <tr>
+                                    <td>Nama :</td>
+                                    <td><input name="nama" type="text" id="nama"></td>
+                                </tr>
+                
+                                <tr>
+                                    <td>Alamat :</td>
+                                    <td><input name="alamat" type="text" id="alamat"></td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>No.HP :</td>
+                                    <td><input name="telp" type="text" id="telp"></td> </tr>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Pelayanan</td>
+                                    <td> <select  name="Category" onChange="SelectCat2();" >
+                                        <option value="">--Pilih Paket Laundry--</option>
+                                        <option value="Laundry Kiloan">Laundry Kiloan</option>
+                                        <option value="Laundry Sepatu">Laundry Sepatu</option>
+                                        <option value="Laundry Satuan">Laundry Satuan</option>
+                                        <option value="Laundry Karpet">Laundry Karpet</option>
+                                        </select>
+                                        <select id="SubCat" name="SubCat">
+                                        <option value="">--Pilih Jenis Layanan--</option>
+                                        </select>
+                                        </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>Keterangan</td>
+                                    <td><textarea name="keterangan" id="keterangan"></textarea></td> </textarea>
+                                </tr>
+                            
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><input type="submit" name="Submit" value="Kirim"><input type="reset" name="Submit2" value="Batal">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                            <div align="center">
+                            </div>
+                        </p>
+                </div>
+         </article>
+         <div class="kontak">
+            <div class="isi-kontak">
+                <center><h4>Hubungi Kami</h4></center>
+            <p><img src="gambar/telpon.png" alt="">
+                <a href="whatsapp://send?text=Hello&phone=+6287708984366">0877-0898-4366</a>
+                <a href="https://www.instagram.com/faisalhbibie_/"> - Instagram</a>
+                <a href="tentang-toko.html"><center><h4>Tentang Kami</h4></center></a>
+                <center>Jasa Laundry Kami telah berpengalaman dari tahun 2015.
+                    Pekerja kami telah lulus training dalam bekerja di laundry.</center>
+             </p>   
+        </div>
+    </div>
+       <footer>
+        Copyright © 2022  <a href="https://laundryputihbersihresponsi.000webhostapp.com/">Laundry Putih Bersih</a> 
+            · Website By Faisal Habibie
+       </footer>
+    </div>
+</body>
+</html>

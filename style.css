@@ -1,0 +1,234 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6e6e6;
+    padding: 0;
+    margin:0;
+}
+
+header{
+    background-color: #87CEEB;
+    position:fixed;
+    z-index:9999;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background: white;
+    margin:auto;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+header .logo {
+    font-size: xx-large;
+    padding: 30px 0 30px 10px;
+}
+
+nav {
+    position:fixed;
+    z-index:9999;
+    width: 100%;
+    margin-top: 125px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:cornflowerblue;
+    border: 1px solid gainsboro;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a{
+    display: inline-block;
+    color:#ffffff;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    opacity:0.9;
+    background-color: #3385ff;
+}
+
+article {
+    width: 97%;
+    height: auto;
+    border-radius: 3px;
+    margin: 5px 4px 5px 10px;
+    border: 1px solid gainsboro;
+    clear: both;
+    padding-top:190px;   
+}
+
+article p {
+    padding: 5px 7px 5px 15px;
+    line-height: 1.5;  
+}
+article .konten {
+    width: 24%;
+    height: auto;
+    margin: 4px 4px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+
+article .isi {
+    width: 100%;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    float: left;
+}
+article .isi .judul {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+article .isi p {
+    margin-top: 0;
+}
+article .isi img {
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+article .konten img {
+    width: 98%;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+}
+article .konten:hover {
+    opacity:0.9;
+
+}
+article .konten .judul a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size:x-large;
+    color:#020101;
+}
+
+article .konten a:hover {
+    opacity:0.9;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.row {
+    display: flex;
+    margin-left:-5px;
+    margin-right:550px;
+}
+  
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    border: 1px solid   black;
+    margin-left: 200px;
+}
+  
+th, td {
+    text-align: left;
+    padding: 16px;
+    background-color:  #ffffff;
+}
+  
+tr:nth-child(even) {
+    background-color:  #ddd;
+}
+
+footer {
+    background-color: #020101;
+    color: white;
+    clear: both;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 3px;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 15px;
+    padding-bottom: 15px;  
+}
+
+footer a{
+    color: white;
+}
+
+
+@media screen and (max-width:1080px) {
+
+    .container, article, footer {
+        float: none;
+        width: 100%;
+   }
+   article .konten {
+    float: left;
+    width: 48%;
+   }
+
+   article .konten img {
+    height: auto;
+   }
+}
+
+@media screen and (max-width:780px){
+    /* For tablets: */
+    .container, article, footer, article .konten {
+        float: none;
+        width: 97%;
+   }
+
+   article .konten img {
+    height: auto;
+   }
+ 
+}
+
+.kontak{
+    width: 100%;
+    min-height: auto; 
+}
+
+.isi-kontak{
+	width: 100%;
+    height: 190px;
+    float: left;
+    background-color: #3385ff;
+	margin-top: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.isi-kontak p img{
+	margin-right: 10px;
+	margin-top: 10px;
+	height:  30px;
+    width:  30px;
+}
+
+.isi-kontak p{
+	text-align: center;
+}
+
+.isi-kontak a{
+    color: white;
+}
